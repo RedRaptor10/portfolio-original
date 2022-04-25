@@ -1,0 +1,38 @@
+:root {
+    --primary-color: rgb(32, 0, 0);
+    --secondary-color: rgb(0, 0, 32);
+    --tertiary-color: rgb(16, 16, 16);
+    --background-color: rgb(16, 16, 16);
+    --color: rgb(192, 192, 192);
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--color);
+    font-family: 'Helvetica', 'Trebuchet MS', 'Arial', 'sans-serif';
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 0 32px;
+}
+
+header .nav {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .nav li:not(:last-child) {
+    margin-right: 32px;
+}
