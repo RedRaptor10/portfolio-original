@@ -70,6 +70,10 @@ header .nav {
     list-style-type: none;
 }
 
+header .svg-inline--fa {
+    margin-right: 16px;
+}
+
 header .nav li {
     font-size: 24px;
     font-weight: bold;
@@ -203,7 +207,7 @@ section .section-top, section .section-bottom {
     margin: 0 16px;
 }
 
-.skills-group h2 {
+.skills-group .card-title {
     background: var(--primary-color);
     margin: 0;
     padding: 16px 0;
@@ -219,6 +223,23 @@ section .section-top, section .section-bottom {
 }
 
 .skills-group-items div {
+    display: flex;
+    align-items: center;
     margin: 32px;
     font-size: 24px;
+}
+
+.skills-group-items .svg-inline--fa {
+    margin-right: 16px;
+    font-size: 32px;
+}
+
+/* Convert HEX color #C0C0C0 to CSS filter for SVGs
+CodePen: https://codepen.io/sosuke/pen/Pjoqqp
+Note: Add brightness(0) saturate(100%) to beginning of filter for non-black SVGs */
+.skills-group-items .skills-icon {
+    height: 1em;
+    margin-right: 16px;
+    font-size: 32px;
+    filter: brightness(0) saturate(100%) invert(86%) sepia(0%) saturate(625%) hue-rotate(197deg) brightness(93%) contrast(85%);
 }
