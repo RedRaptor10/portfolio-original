@@ -101,11 +101,11 @@ main {
 }
 
 section:first-child {
-    padding: calc(10vh + 32px) 0 32px 0;
+    padding-top: calc(10vh + 32px);
 }
 
 section {
-    padding: 32px 0;
+    padding-top: 64px;
 }
 
 section .section-left, section .section-right {
@@ -132,6 +132,7 @@ section .section-top, section .section-bottom {
 #about p {
     font-size: 24px;
     line-height: 48px;
+    text-indent: 48px;
 }
 
 #about a {
@@ -149,23 +150,75 @@ section .section-top, section .section-bottom {
     border-radius: 50%;
 }
 
-#contact {
-    display: flex;
-    justify-content: center;
-    width: 75%;
-    height: 75%;
+/* Card */
+.card {
     background: rgb(32, 32, 32);
     border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-#contact table {
+.card-title {
+    background: var(--primary-color);
+    margin: 0;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Contact */
+.contact-group {
     width: 75%;
     height: 75%;
-    margin-top: 16px;
+}
+
+.contact-info {
+    padding: 32px;
+}
+
+.contact-item {
+    display: flex;
+    padding: 16px 0;
+}
+
+.contact-item div {
     font-size: 20px;
 }
 
-#contact table td {
-    width: 50%;
-    box-sizing: border-box;
+.contact-item div:first-child {
+    width: 25%;
+}
+
+.contact-item div:nth-child(2) {
+    width: 75%;
+}
+
+/* Skills */
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-group {
+    width: calc((100% / 3) - 32px);
+    margin: 0 16px;
+}
+
+.skills-group h2 {
+    background: var(--primary-color);
+    margin: 0;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.skills-group-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills-group-items div {
+    margin: 32px;
+    font-size: 24px;
 }
