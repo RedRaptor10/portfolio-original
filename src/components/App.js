@@ -1,8 +1,8 @@
 import Header from './Header';
 import Footer from './Footer';
 import About from './About';
-import Projects from './Projects';
 import Skills from './Skills';
+import Projects from './Projects';
 
 const App = () => {
   return (
@@ -10,8 +10,8 @@ const App = () => {
       <Header />
       <main>
         <About />
-        <Projects />
         <Skills />
+        <Projects />
       </main>
       <Footer />
     </div>
