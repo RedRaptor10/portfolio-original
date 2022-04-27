@@ -28,28 +28,26 @@ const About = () => {
                     </p>
                 </div>
                 <div className="section-right">
-                    <div id="contact">
-                        <table>
-                            <tr>
-                                <th colspan="2">Contact Information</th>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td><a href="mailto:weiminh_lam@yahoo.com">weiminh_lam@yahoo.com</a></td>
-                            </tr>
-                            <tr>
-                                <td>GitHub</td>
-                                <td><a href="https://www.github.com/RedRaptor10" target="_blank" rel="noreferrer">github.com/RedRaptor10</a></td>
-                            </tr>
-                            <tr>
-                                <td>LinkedIn</td>
-                                <td>
+                    <div className="card contact-group">
+                        <h2 className="card-title">Contact Information</h2>
+                        <div className="contact-info">
+                            <div className="contact-item">
+                                <div>Email</div>
+                                <div><a href="mailto:weiminh_lam@yahoo.com">weiminh_lam@yahoo.com</a></div>
+                            </div>
+                            <div className="contact-item">
+                                <div>GitHub</div>
+                                <div><a href="https://www.github.com/RedRaptor10" target="_blank" rel="noreferrer">github.com/RedRaptor10</a></div>
+                            </div>
+                            <div className="contact-item">
+                                <div>LinkedIn</div>
+                                <div>
                                     <a href="https://www.linkedin.com/in/weiminh-lam/339198129" target="_blank" rel="noreferrer">
                                         linkedin.com/in/weiminh...
                                     </a>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
