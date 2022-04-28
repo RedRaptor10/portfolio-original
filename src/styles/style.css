@@ -102,6 +102,7 @@ main {
     width: 75%;
     min-height: 100vh;
     margin: 0 auto;
+    padding-bottom: 32px;
 }
 
 section:first-child {
@@ -243,4 +244,73 @@ section .section-top, section .section-bottom {
     margin-right: 16px;
     font-size: 32px;
     transition: 0.2s;
+}
+
+/* Projects */
+#projects .card-title {
+    padding-left: 32px;
+    text-align: left;
+}
+
+.project-content {
+    display: flex;
+    padding: 32px;
+}
+
+#projects img {
+    width: calc(50% - 16px);
+    height: 100%;
+    border: 2px solid var(--color);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.project-info {
+    width: calc(50% - 16px);
+    margin-left: 32px;
+    box-sizing: border-box;
+}
+
+.project-description {
+    min-height: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+.project-tools {
+    padding: 16px 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.project-tools .svg-inline--fa {
+    margin-right: 8px;
+}
+
+.project-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-btns button {
+    background: var(--primary-color);
+    margin: 0 16px;
+    padding: 16px;
+    color: var(--color);
+    font-size: 24px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.project-btns button:hover {
+    background: rgb(128, 32, 32);
+    color: #fff;
+}
+
+.project-btns .svg-inline--fa {
+    margin-right: 16px;
 }
