@@ -238,22 +238,9 @@ section .section-top, section .section-bottom {
     transform: scale(1.2);
 }
 
-.skills-group-items .svg-inline--fa {
-    margin-right: 16px;
-    font-size: 32px;
-}
-
-/* Convert HEX color #C0C0C0 to CSS filter for SVGs
-CodePen: https://codepen.io/sosuke/pen/Pjoqqp
-Note: Add brightness(0) saturate(100%) to beginning of filter for non-black SVGs */
-.skills-group-items .skills-icon {
+.skills-group-items img {
     height: 1em;
     margin-right: 16px;
     font-size: 32px;
-    filter: brightness(0) saturate(1) invert(86%) sepia(0) saturate(625%) hue-rotate(197deg) brightness(93%) contrast(85%);
     transition: 0.2s;
-}
-
-.skills-group-items a:hover .skills-icon {
-    filter: brightness(0) saturate(1) invert(1) sepia(0) saturate(1) hue-rotate(0) brightness(1) contrast(1);
 }
