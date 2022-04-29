@@ -1,4 +1,4 @@
-// Import Additional Icons From Assets Using Webpack
+// Import Icons From Assets Using Webpack
 const icons = {};
 
 function importAll(r) {

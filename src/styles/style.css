@@ -34,6 +34,7 @@ header {
     height: 10vh;
     padding: 0 64px;
     box-sizing: border-box;
+    z-index: 9999;
 }
 
 header .header-left {
@@ -252,13 +253,16 @@ section .section-top, section .section-bottom {
     width: 100%;
     height: 500px;
     overflow: hidden;
-    z-index: -9999;
 }
 
 .project {
     position: absolute;
     left: 125%;
     width: 100%;
+    height: 100%;
+}
+
+.animate {
     -webkit-transition: all 0.5s ease; /* Chrome / Safari */
     -moz-transition: all 0.5s ease; /* Mozilla Firefox */
     -o-transition: all 0.5s ease; /* Opera */
@@ -267,6 +271,10 @@ section .section-top, section .section-bottom {
 }
 
 .project:first-child {
+    left: -125%;
+}
+
+.project:nth-child(2) {
     left: 0;
 }
 
@@ -295,10 +303,12 @@ section .section-top, section .section-bottom {
 }
 
 .project-description {
-    min-height: 50%;
+    height: 50%;
     font-size: 20px;
     line-height: 40px;
     border-bottom: 1px solid rgb(64, 64, 64);
+    overflow-y: auto;
+    white-space: pre-line;
 }
 
 .project-tools {
@@ -315,10 +325,12 @@ section .section-top, section .section-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 32px;
 }
 
-.project-btns button {
+#projects button {
     background: var(--primary-color);
+    width: 224px;
     margin: 0 16px;
     padding: 16px;
     color: var(--color);
@@ -329,11 +341,16 @@ section .section-top, section .section-bottom {
     transition: 0.2s;
 }
 
-.project-btns button:hover {
+#projects button:hover {
     background: rgb(128, 32, 32);
     color: #fff;
 }
 
-.project-btns .svg-inline--fa {
+#projects .svg-inline--fa {
     margin-right: 16px;
+}
+
+.projects-list-btns {
+    margin-top: 16px;
+    text-align: center;
 }
