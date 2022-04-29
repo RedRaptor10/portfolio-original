@@ -315,7 +315,12 @@ section .section-top, section .section-bottom {
 
 #projects .card-title {
     padding-left: 32px;
+    padding-right: 32px;
     text-align: left;
+}
+
+#projects .card-title span {
+    float: right;
 }
 
 .project-content {

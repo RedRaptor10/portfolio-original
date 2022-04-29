@@ -113,7 +113,7 @@ const Projects = () => {
                 {projects.map((project, i) => {
                     return (
                         <div key={i} className="card project">
-                            <h2 className="card-title">{project.name}</h2>
+                            <h2 className="card-title">{project.name}<span>{i + 1 + ' / ' + projects.length}</span></h2>
                             <div className="project-content">
                                 <img src={thumbs['./' + project.thumb]} alt={project.name}></img>
                                 <div className="project-info">
