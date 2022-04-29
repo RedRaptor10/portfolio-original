@@ -330,7 +330,6 @@ section .section-top, section .section-bottom {
 
 #projects button {
     background: var(--primary-color);
-    width: 224px;
     margin: 0 16px;
     padding: 16px;
     color: var(--color);
@@ -341,16 +340,28 @@ section .section-top, section .section-bottom {
     transition: 0.2s;
 }
 
+.project-btns button, .prev-btn, .next-btn {
+    width: 224px;
+}
+
 #projects button:hover {
     background: rgb(128, 32, 32);
     color: #fff;
 }
 
-#projects .svg-inline--fa {
+#projects button:active {
+    background: rgb(64, 32, 32);
+}
+
+.project-btns .svg-inline--fa, .prev-btn .svg-inline--fa, .next-btn .svg-inline--fa {
     margin-right: 16px;
 }
 
 .projects-list-btns {
     margin-top: 16px;
     text-align: center;
+}
+
+.pause-btn {
+    width: 96px;
 }

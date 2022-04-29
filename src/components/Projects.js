@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTools, faEye, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faTools, faEye, faCode, faPause } from '@fortawesome/free-solid-svg-icons';
 import projects from '../helpers/projects';
 
 // Import Project Thumbs From Assets Using Webpack
@@ -14,6 +14,29 @@ importAll(require.context('../assets/projects', false, /\.(png|jpe?g|svg)$/)); /
 
 const Projects = () => {
     let index = 1;
+    let paused = false;
+    const delay = 5000;
+
+    // Automatically shift slides every 5 seconds
+    let interval = setInterval(() => {
+        shiftSlide(1);
+    }, delay);
+
+    function play() {
+        document.querySelector('.pause-btn').style.background = 'rgb(96, 32, 32)';
+
+        interval = setInterval(() => {
+            shiftSlide(1);
+            paused = false;
+        }, delay);
+    }
+
+    function pause() {
+        document.querySelector('.pause-btn').style.background = 'rgb(64, 32, 32)';
+
+        clearInterval(interval);
+        paused = true;
+    }
 
     // Clone first and last slides and add them as prev and next slides
     useEffect(() => {
@@ -115,8 +138,9 @@ const Projects = () => {
                 })}
             </div>
             <div className="projects-list-btns">
-                <button className="prev-btn" onClick={() => { shiftSlide(0) }}>Prev</button>
-                <button className="next-btn" onClick={() => { shiftSlide(1) }}>Next</button>
+                <button className="prev-btn" onClick={() => { pause(); shiftSlide(0) }}>Prev</button>
+                <button className="pause-btn" onClick={() => paused ? play() : pause() }><FontAwesomeIcon icon={faPause} /></button>
+                <button className="next-btn" onClick={() => { pause(); shiftSlide(1) }}>Next</button>
             </div>
         </section>
     )
