@@ -3,6 +3,8 @@ import Footer from './Footer';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import TopButton from './TopButton';
+
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
         <Projects />
       </main>
       <Footer />
+      <TopButton />
     </div>
   );
 };

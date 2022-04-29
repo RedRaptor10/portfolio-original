@@ -22,6 +22,41 @@ body {
     margin: 0;
 }
 
+/* Top Button */
+.top-btn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 64px 64px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.top-btn button {
+    background: var(--primary-color);
+    padding: 22px 32px;
+    color: var(--color);
+    font-size: 32px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.top-btn button:hover {
+    background: rgb(128, 32, 32);
+}
+
+.top-btn button:active {
+    background: rgb(64, 32, 32);
+}
+
+.top-btn-show {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Header */
 header {
     display: flex;
