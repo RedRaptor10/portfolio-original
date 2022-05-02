@@ -22,6 +22,35 @@ body {
     margin: 0;
 }
 
+/* Loading Transitions */
+.transition {
+    transition: 1s ease;
+}
+
+.hidden-left {
+    -webkit-transform: translateX(-10%); /* Chrome / Safari / Opera */
+    -moz-transform: translateX(-10%); /* Firefox */
+    -ms-transform: translateX(-10%); /* Internet Explorer / Edge */
+    transform: translateX(-10%);
+    opacity: 0;
+}
+
+.hidden-right {
+    -webkit-transform: translateX(10%); /* Chrome / Safari / Opera */
+    -moz-transform: translateX(10%); /* Firefox */
+    -ms-transform: translateX(10%); /* Internet Explorer / Edge */
+    transform: translateX(10%);
+    opacity: 0;
+}
+
+.visible {
+    -webkit-transform: translateX(0); /* Chrome / Safari / Opera */
+    -moz-transform: translateX(0); /* Firefox */
+    -ms-transform: translateX(0); /* Internet Explorer / Edge */
+    transform: translateX(0);
+    opacity: 1;
+}
+
 /* Top Button */
 .top-btn {
     position: fixed;
@@ -64,12 +93,17 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    background: var(--primary-color);
+    background: rgba(0, 0, 0, 0.75);
     width: 100%;
     height: 10vh;
     padding: 0 64px;
     box-sizing: border-box;
+    transition: 1s;
     z-index: 9999;
+}
+
+.header-background {
+    background: var(--primary-color);
 }
 
 header .header-left {
@@ -135,18 +169,20 @@ footer {
 
 /* Main */
 main {
-    width: 75%;
+    width: 100%;
     min-height: 100vh;
     margin: 0 auto;
     padding-bottom: 32px;
+    overflow-x: hidden;
 }
 
 section:first-child {
-    padding-top: calc(10vh + 32px);
+    padding: calc(10vh + 32px) 12.5% 0 12.5%;
 }
 
 section {
-    padding-top: 64px;
+    padding: 64px 12.5% 0 12.5%;
+    box-sizing: border-box;
 }
 
 section .section-left, section .section-right {
@@ -157,6 +193,14 @@ section h1 {
     font-size: 64px;
     line-height: 32px;
     text-decoration: underline var(--primary-color);
+}
+
+/* Home */
+#home  {
+    background: url('../assets/background.jpg');
+    background-size: 100%;
+    background-position: 0 50%;
+    height: 100vh;
 }
 
 /* About */
@@ -272,6 +316,9 @@ section .section-top, section .section-bottom {
 
 .skills-group-items a:hover {
     color: #fff;
+    -webkit-transform: scale(1.2); /* Chrome / Safari / Opera */
+    -moz-transform: scale(1.2); /* Firefox */
+    -ms-transform: scale(1.2); /* Internet Explorer / Edge */
     transform: scale(1.2);
 }
 

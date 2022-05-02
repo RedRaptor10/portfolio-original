@@ -3,6 +3,16 @@ import { faHome, faUser, faTools, faFolder } from '@fortawesome/free-solid-svg-i
 import avatar from '../assets/avatar.png';
 
 const Header = () => {
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 100) {
+            header.classList.add('header-background');
+        } else {
+            header.classList.remove('header-background');
+        }
+    });
+
     return (
         <header>
             <a className="header-left" href="/#">

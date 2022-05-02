@@ -52,8 +52,7 @@ const Projects = () => {
 
     function shiftSlide(direction) {
         const slides = document.querySelectorAll('.project');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
+        const btns = document.querySelectorAll('.projects-list-btns > button');
         const prev = 0;
         const first = 1;
         const last = slides.length - 2;
@@ -63,7 +62,7 @@ const Projects = () => {
         slides.forEach(s => { s.classList.add('animate'); });
 
         // Temporarily disable buttons
-        direction ? nextBtn.disabled = true : prevBtn.disabled = true;
+        btns.forEach(b => { b.disabled = true; });
 
         // Shift slides
         if (direction) {
@@ -102,7 +101,7 @@ const Projects = () => {
             }
 
             // Re-enable buttons
-            direction ? nextBtn.disabled = false : prevBtn.disabled = false;
+            btns.forEach(b => { b.disabled = false; });
         }, 500);
     }
 
