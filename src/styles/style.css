@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(96, 32, 32);
-    --background-color: rgb(24, 24, 24);
+    --background-color: rgb(16, 16, 16);
     --color: rgb(192, 192, 192);
 }
 
@@ -183,7 +183,7 @@ section h1:not(.home-header h1) {
 
 /* Card */
 .card {
-    background: rgb(32, 32, 32);
+    background: rgb(24, 24, 24);
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
@@ -368,7 +368,7 @@ section .section-top, section .section-bottom {
 }
 
 .projects-list table td:hover {
-    background: rgb(48, 48, 48);
+    background: rgb(32, 32, 32);
 }
 
 .projects-list table td:active {
