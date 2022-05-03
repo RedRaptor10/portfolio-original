@@ -17,16 +17,16 @@ const Projects = () => {
     let paused = false;
     const delay = 5000;
 
-    // Automatically shift slides every 5 seconds
+    // Automatically shift slides
     let interval = setInterval(() => {
-        shiftSlide(1);
+        shiftSlide(index + 1);
     }, delay);
 
     function play() {
         document.querySelector('.pause-btn').style.background = 'rgb(96, 32, 32)';
 
         interval = setInterval(() => {
-            shiftSlide(1);
+            shiftSlide(index + 1);
             paused = false;
         }, delay);
     }
@@ -48,9 +48,15 @@ const Projects = () => {
 
         slidesContainer.append(firstClone);
         slidesContainer.prepend(lastClone);
+
+        // Set default slide positions
+        const newSlides = document.querySelectorAll('.project');
+        newSlides.forEach((s, i) => {
+            s.style.left = `${125 * (i - 1)}%`;
+        });
     }, []);
 
-    function shiftSlide(direction) {
+    function shiftSlide(newIndex) {
         const slides = document.querySelectorAll('.project');
         const btns = document.querySelectorAll('.projects-list-btns > button');
         const prev = 0;
@@ -65,36 +71,27 @@ const Projects = () => {
         btns.forEach(b => { b.disabled = true; });
 
         // Shift slides
-        if (direction) {
-            slides[index].style.left = '-125%';
-            slides[index + 1].style.left = '0';
-            index++;
-        } else {
-            slides[index].style.left = '125%';
-            slides[index - 1].style.left = '0';
-            index--;
-        }
+        slides.forEach((s, i) => {
+            s.style.left = `${125 * (i - newIndex)}%`;
+        });
+
+        index = newIndex; // Set new index
 
         // Wait for slides to shift
         setTimeout(() => {
-            slides.forEach((s, i) => {
-                s.classList.remove('animate'); // Remove slide animation
-            });
+            // Remove slide animation
+            slides.forEach(s => { s.classList.remove('animate'); });
 
             // If prev or next slide is reached, reset slide positions
             if (index === next) {
                 slides.forEach((s, i) => {
-                    if (i === prev) { s.style.left = '-125%'; }
-                    else if (i === first) { s.style.left = '0'; }
-                    else { s.style.left = '125%'; }
+                    s.style.left = `${125 * (i - first)}%`;
                 });
 
                 index = first; // Reset index
             } else if (index === prev) {
                 slides.forEach((s, i) => {
-                    if (i === next) { s.style.left = '125%'; }
-                    else if (i === last) { s.style.left = '0'; }
-                    else { s.style.left = '-125%'; }
+                    s.style.left = `${125 * (i - last)}%`;
                 });
 
                 index = last; // Reset index
@@ -137,9 +134,9 @@ const Projects = () => {
                 })}
             </div>
             <div className="projects-list-btns">
-                <button className="prev-btn" onClick={() => { pause(); shiftSlide(0) }}>Prev</button>
+                <button className="prev-btn" onClick={() => { pause(); shiftSlide(index - 1) }}>Prev</button>
                 <button className="pause-btn" onClick={() => paused ? play() : pause() }><FontAwesomeIcon icon={faPause} /></button>
-                <button className="next-btn" onClick={() => { pause(); shiftSlide(1) }}>Next</button>
+                <button className="next-btn" onClick={() => { pause(); shiftSlide(index + 1) }}>Next</button>
             </div>
         </section>
     )

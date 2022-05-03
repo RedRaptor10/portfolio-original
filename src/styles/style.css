@@ -360,7 +360,6 @@ section .section-top, section .section-bottom {
 
 .project {
     position: absolute;
-    left: 125%;
     width: 100%;
     height: 100%;
 }
@@ -371,14 +370,6 @@ section .section-top, section .section-bottom {
     -o-transition: all 0.5s ease; /* Opera */
     -ms-transition: all 0.5s ease; /* Microsoft Edge */
     transition: all 0.5s ease;
-}
-
-.project:first-child {
-    left: -125%;
-}
-
-.project:nth-child(2) {
-    left: 0;
 }
 
 #projects .card-title {
