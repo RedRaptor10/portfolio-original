@@ -176,10 +176,6 @@ main {
     overflow-x: hidden;
 }
 
-section:first-child {
-    padding: calc(10vh + 32px) 12.5% 0 12.5%;
-}
-
 section {
     padding: 64px 12.5% 0 12.5%;
     box-sizing: border-box;
@@ -189,7 +185,7 @@ section .section-left, section .section-right {
     width: 50%;
 }
 
-section h1 {
+section h1:not(.home-header h1) {
     font-size: 64px;
     line-height: 32px;
     text-decoration: underline var(--primary-color);
@@ -198,9 +194,34 @@ section h1 {
 /* Home */
 #home  {
     background: url('../assets/background.jpg');
-    background-size: 100%;
     background-position: 0 50%;
+    background-size: 100%;
     height: 100vh;
+}
+
+.home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.home-header h1 {
+    font-size: 6vw;
+    text-align: center;
+}
+
+.home-header-title {
+    color: rgb(128, 32, 32);
+}
+
+.home-header-cursor {
+    display: inline-block;
+}
+
+.cursor-hidden {
+    opacity: 0;
 }
 
 /* About */

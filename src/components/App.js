@@ -11,11 +11,12 @@ const App = () => {
   useEffect(() => {
     const animations = {
       left: [
-        Array.from(document.getElementById('about').children), // Get all direct children and convert returned object into array
-        Array.from(document.getElementById('projects').children)
+        document.querySelector('#about .section-top'),
+        Array.from(document.getElementById('skills').children), // Get all direct children and convert returned object into array
       ].flat(), // Flatten nested array
       right: [
-        Array.from(document.getElementById('skills').children)
+        document.querySelector('#about .section-bottom'),
+        Array.from(document.getElementById('projects').children)
       ].flat()
     };
 
