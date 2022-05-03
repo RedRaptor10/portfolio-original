@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faTools, faFolder } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faTools, faFolder, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import avatar from '../assets/avatar.png';
 
 const Header = () => {
@@ -24,6 +24,7 @@ const Header = () => {
                 <li><a href="/#about"><FontAwesomeIcon icon={faUser} />About</a></li>
                 <li><a href="/#skills"><FontAwesomeIcon icon={faTools} />Skills</a></li>
                 <li><a href="/#projects"><FontAwesomeIcon icon={faFolder} />Projects</a></li>
+                <li><a href="/#contact"><FontAwesomeIcon icon={faEnvelope} />Contact</a></li>
             </ul>
         </header>
     )

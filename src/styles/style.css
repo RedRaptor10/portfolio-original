@@ -1,6 +1,5 @@
 :root {
     --primary-color: rgb(96, 32, 32);
-    --secondary-color: rgb(32, 48, 96);
     --background-color: rgb(24, 24, 24);
     --color: rgb(192, 192, 192);
 }
@@ -158,15 +157,6 @@ header .nav li:not(:last-child) {
     margin-right: 32px;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--secondary-color);
-    height: 10vh;
-}
-
 /* Main */
 main {
     width: 100%;
@@ -189,6 +179,21 @@ section h1:not(.home-header h1) {
     font-size: 64px;
     line-height: 32px;
     text-decoration: underline var(--primary-color);
+}
+
+/* Card */
+.card {
+    background: rgb(32, 32, 32);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    background: var(--primary-color);
+    margin: 0;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
 }
 
 /* Home */
@@ -256,50 +261,37 @@ section .section-top, section .section-bottom {
     border-radius: 50%;
 }
 
-/* Card */
-.card {
-    background: rgb(32, 32, 32);
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.card-title {
-    background: var(--primary-color);
-    margin: 0;
-    padding: 16px 0;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-}
-
-/* Contact */
-.contact-group {
-    width: 75%;
-    height: 75%;
-}
-
-.contact-info {
-    padding: 16px 32px;
-}
-
-.contact-item {
+.get-in-touch {
     display: flex;
-    padding: 16px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.contact-item div {
-    font-size: 24px;
+.get-in-touch span {
+    font-size: 32px;
+    padding-bottom: 32px;
 }
 
-.contact-item div:first-child {
-    width: calc(100% / 3);
+.get-in-touch button {
+    background: var(--primary-color);
+    padding: 16px;
+    color: var(--color);
+    font-size: 32px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.contact-item div:nth-child(2) {
-    width: calc((100% / 3) * 2);
+.get-in-touch button:hover {
+    background: rgb(128, 32, 32);
+    color: #fff;
 }
 
-.contact-item .svg-inline--fa {
-    margin-right: 16px;
+.get-in-touch button:active {
+    background: rgb(64, 32, 32);
 }
 
 /* Skills */
@@ -500,4 +492,43 @@ section .section-top, section .section-bottom {
 
 .pause-btn {
     width: 96px;
+}
+
+/* Contact */
+.contact-info-container {
+    width: 50%;
+    margin: 0 auto 32px auto;
+}
+
+.contact-info {
+    padding: 16px 64px;
+}
+
+.contact-item {
+    display: flex;
+    padding: 16px 0;
+}
+
+.contact-item div {
+    font-size: 24px;
+}
+
+.contact-item div:first-child {
+    width: calc(100% / 3);
+}
+
+.contact-item div:nth-child(2) {
+    width: calc((100% / 3) * 2);
+}
+
+.contact-item .svg-inline--fa {
+    margin-right: 16px;
+}
+
+#contact a {
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    color: #fff;
 }
