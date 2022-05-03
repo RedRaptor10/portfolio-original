@@ -13,6 +13,7 @@ const App = () => {
       left: [
         document.querySelector('#about .section-top'),
         Array.from(document.getElementById('skills').children), // Get all direct children and convert returned object into array
+        Array.from(document.getElementById('contact').children)
       ].flat(), // Flatten nested array
       right: [
         document.querySelector('#about .section-bottom'),

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTools, faEye, faCode, faPause } from '@fortawesome/free-solid-svg-icons';
-import projects from '../helpers/projects';
+import projects from '../data/projects';
 
 // Import Project Thumbs From Assets Using Webpack
 const thumbs = {};
@@ -140,11 +140,11 @@ const Projects = () => {
                                         <FontAwesomeIcon icon={faTools} /><b>Tools: </b>{project.tools}
                                         </div>
                                         <div className="project-btns">
-                                            <a href={project.demo} target="_blank" rel="noreferrer">
-                                                <button><FontAwesomeIcon icon={faEye} />View Demo</button>
-                                            </a>
                                             <a href={project.source} target="_blank" rel="noreferrer">
                                                 <button><FontAwesomeIcon icon={faCode} />Source Code</button>
+                                            </a>
+                                            <a href={project.demo} target="_blank" rel="noreferrer">
+                                                <button><FontAwesomeIcon icon={faEye} />View Demo</button>
                                             </a>
                                         </div>
                                     </div>
