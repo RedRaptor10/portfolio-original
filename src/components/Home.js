@@ -6,7 +6,7 @@ const Home = () => {
         const cursor = document.querySelector('.home-header-cursor');
 
         let index = 0;
-        let del = true;
+        let del = false;
         let pause = false;
         let pauseCounter = 0;
         let pauseMax = 15; // Pause typewriter for delay * pauseMax
@@ -17,10 +17,10 @@ const Home = () => {
         setInterval(() => {
             let title = document.querySelector('.home-header-title');
 
-            if (del && title.innerHTML.length > 0) {
+            if (del) {
                 title.innerHTML = title.innerHTML.slice(0, -1);
 
-                // If all letters deleted, start typing
+                // If all letters deleted, start typing next word
                 if (title.innerHTML.length === 0) {
                     index++;
                     del = false;
@@ -30,10 +30,11 @@ const Home = () => {
                     index = 0;
                 }
             }
-            else if (!del) {
+            else {
                 if (!pause) {
                     title.innerHTML += titles[index][title.innerHTML.length];
-                    // If last letter finished, pause interval
+
+                    // If last letter finished, pause typewriter
                     if (title.innerHTML.length === titles[index].length) {
                         pause = true;
                         // Set cursor interval
@@ -60,7 +61,7 @@ const Home = () => {
                 <h1>
                     <div className="home-header-text">I am a</div>
                     <div>
-                        <span className="home-header-title">Coder</span>
+                        <span className="home-header-title"></span>
                         <span className="home-header-cursor">|</span>
                     </div>
                 </h1>
