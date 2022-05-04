@@ -13,7 +13,7 @@ const TopButton = () => {
     });
 
     return (
-        <a className="top-btn" href="/#"><button><FontAwesomeIcon icon={faChevronUp} /></button></a>
+        <a className="top-btn" href="#home"><button><FontAwesomeIcon icon={faChevronUp} /></button></a>
     )
 };
 

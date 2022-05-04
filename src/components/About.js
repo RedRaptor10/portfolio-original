@@ -21,7 +21,7 @@ const About = () => {
                 <div className="section-left">
                     <div className="get-in-touch">
                         <span>Interested in My Work?</span>
-                        <a href="/#contact"><button>Contact Me</button></a>
+                        <a href="#contact"><button>Contact Me</button></a>
                     </div>
                 </div>
                 <div className="section-right">
