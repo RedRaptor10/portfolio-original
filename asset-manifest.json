@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f8afeb03.css",
+    "main.js": "/portfolio/static/js/main.24981dc9.js",
+    "static/media/wheres-waldo.jpg": "/portfolio/static/media/wheres-waldo.3f473c8dc90455465730.jpg",
+    "static/media/avatar.png": "/portfolio/static/media/avatar.b1690d0ecd28bda40b2e.png",
+    "static/media/background.jpg": "/portfolio/static/media/background.023464b2cd67e07be787.jpg",
+    "static/media/game-inventory.jpg": "/portfolio/static/media/game-inventory.afdf7542c60df3770aea.jpg",
+    "static/media/fakeddit.jpg": "/portfolio/static/media/fakeddit.9aee41a031ad0a77b996.jpg",
+    "static/media/battleship.jpg": "/portfolio/static/media/battleship.5619f0696eec3bb4b643.jpg",
+    "static/media/odinbook.jpg": "/portfolio/static/media/odinbook.b9ae6a82deb45abf3e90.jpg",
+    "static/media/calculator.jpg": "/portfolio/static/media/calculator.d64f965b73b2f116683e.jpg",
+    "static/media/pug.svg": "/portfolio/static/media/pug.b0c23d5d3894151af63c.svg",
+    "static/media/wordpress.svg": "/portfolio/static/media/wordpress.558f4cc800dc43b44392.svg",
+    "static/media/firebase.svg": "/portfolio/static/media/firebase.ea1a2d6693eea8cbaf11.svg",
+    "static/media/jest.svg": "/portfolio/static/media/jest.83a6dad8c94c5bd24919.svg",
+    "static/media/nodejs.svg": "/portfolio/static/media/nodejs.615ffbea9529ca7047ed.svg",
+    "static/media/heroku.svg": "/portfolio/static/media/heroku.5c9b3c2c4d563edd293f.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.40014dbe934ce67b61c6.svg",
+    "static/media/git.svg": "/portfolio/static/media/git.97b51c626688fe649203.svg",
+    "static/media/mongodb.svg": "/portfolio/static/media/mongodb.c6ed6a9f9be3d9ca5611.svg",
+    "static/media/expressjs.svg": "/portfolio/static/media/expressjs.ea97b712340ffb8f11d8.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/webpack.svg": "/portfolio/static/media/webpack.23fc1d3ac606d117e05a.svg",
+    "static/media/npm.svg": "/portfolio/static/media/npm.17b34f83fde075fcda89.svg",
+    "static/media/css3.svg": "/portfolio/static/media/css3.4e47c3122b8d2476a02f.svg",
+    "static/media/html5.svg": "/portfolio/static/media/html5.f318c8b1d5945fa9adc8.svg",
+    "static/media/javascript.svg": "/portfolio/static/media/javascript.b879f838faf1cb951d1c.svg",
+    "static/media/react.svg": "/portfolio/static/media/react.638b460cfd7b8709a2ba.svg",
+    "main.f8afeb03.css.map": "/portfolio/static/css/main.f8afeb03.css.map",
+    "main.24981dc9.js.map": "/portfolio/static/js/main.24981dc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8afeb03.css",
+    "static/js/main.24981dc9.js"
+  ]
+}
