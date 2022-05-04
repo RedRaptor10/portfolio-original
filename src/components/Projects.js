@@ -131,7 +131,7 @@ const Projects = () => {
                             <div key={i} className="card project">
                                 <h2 className="card-title">{project.name}<span>{i + 1 + ' / ' + projects.length}</span></h2>
                                 <div className="project-content">
-                                    <img src={thumbs['./' + project.thumb]} alt={project.name}></img>
+                                    <div id={'project-thumb-' + (i + 1)} className="project-thumb" style={{ backgroundImage: 'url(' + thumbs['./' + project.thumb] + ')' }}></div>
                                     <div className="project-info">
                                         <div className="project-description">
                                             {project.description}

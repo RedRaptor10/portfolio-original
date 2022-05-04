@@ -365,10 +365,12 @@ section .section-top, section .section-bottom {
     padding: 16px;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .projects-list table td:hover {
     background: rgb(32, 32, 32);
+    color: #fff;
 }
 
 .projects-list table td:active {
@@ -416,12 +418,22 @@ section .section-top, section .section-bottom {
     padding: 32px;
 }
 
-#projects img {
+.project-thumb {
+    background-size: 150%;
+    background-position: center 0;
     width: calc(50% - 16px);
-    height: 100%;
+    height: 259px;
     border: 2px solid var(--color);
     border-radius: 8px;
     box-sizing: border-box;
+}
+
+#project-thumb-1 {
+    background-position: center;
+}
+
+#project-thumb-4, #project-thumb-5 {
+    background-position: center calc(100% / 3);
 }
 
 .project-info {
