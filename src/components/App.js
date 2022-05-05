@@ -34,9 +34,6 @@ const App = () => {
           if (rect.bottom > 0 && rect.top < (window.innerHeight || document.documentElement.clientHeight)) {
             (position === 'left') ? el.classList.remove('hidden-left') : el.classList.remove('hidden-right');
             el.classList.add('visible');
-          } else {
-            (position === 'left') ? el.classList.add('hidden-left') : el.classList.add('hidden-right');
-            el.classList.remove('visible');
           }
         });
       }
