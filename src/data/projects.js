@@ -6,7 +6,7 @@ const projects = [
             'send friend requests, upload a profile picture, and set profile and post visibility. ' +
             'To get started, either create an account or log in with an existing account:\n' +
             'Email: johndoe@johndoe.com\nPassword: johndoe',
-        tools: 'NodeJS / Express, Mongoose (MongoDB), JavaScript, React, HTML, CSS',
+        tools: 'JavaScript, React, HTML, CSS, NodeJS / Express, Mongoose (MongoDB)',
         thumb: 'odinbook.jpg',
         demo: 'https://redraptor10.github.io/odinbook/',
         source: 'https://github.com/RedRaptor10/odinbook'
@@ -17,7 +17,7 @@ const projects = [
             'and log in, browse different subfakeddits, create/delete posts and comments, upvote/downvote ' +
             'posts and comments, collapse comments, sort posts and comments, filter posts by flair, and ' +
             'search posts.',
-        tools: 'React, Firebase, JavaScript, HTML, CSS',
+        tools: 'JavaScript, React, HTML, CSS, Firebase',
         thumb: 'fakeddit.jpg',
         demo: 'https://redraptor10.github.io/fakeddit',
         source: 'https://github.com/RedRaptor10/fakeddit'
@@ -27,7 +27,7 @@ const projects = [
         description: 'An inventory app that allows a user to manage a game library. ' +
             'The inventory follows basic CRUD guidelines, allowing the user to Create, ' +
             'Read, Update, and Delete game data in the database.',
-        tools: 'NodeJS / Express, Mongoose (MongoDB), JavaScript, HTML, CSS',
+        tools: 'JavaScript, HTML, CSS, NodeJS / Express, Mongoose (MongoDB)',
         thumb: 'game-inventory.jpg',
         demo: 'https://glacial-tor-43943.herokuapp.com/',
         source: 'https://github.com/RedRaptor10/inventory-app'
@@ -38,7 +38,7 @@ const projects = [
             "and Wizard by clicking anywhere on the image and selecting the character's name. " +
             "If the player's time is within the top 10 highest scores, they can submit it to the " +
             "leaderboard.",
-        tools: 'React, Firebase, JavaScript, HTML, CSS',
+        tools: 'JavaScript, React, HTML, CSS, Firebase',
         thumb: 'wheres-waldo.jpg',
         demo: 'https://redraptor10.github.io/Wheres-Waldo',
         source: 'https://github.com/RedRaptor10/Wheres-Waldo'
