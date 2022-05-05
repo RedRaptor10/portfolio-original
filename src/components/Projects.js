@@ -15,7 +15,7 @@ importAll(require.context('../assets/projects', false, /\.(png|jpe?g|svg)$/)); /
 const Projects = () => {
     let index = 1;
     let paused = false;
-    const delay = 5000;
+    const delay = 10000;
 
     // Automatically shift slides
     let interval = setInterval(() => {
