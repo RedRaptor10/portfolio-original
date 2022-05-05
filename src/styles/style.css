@@ -1,3 +1,18 @@
+/*
+- Root
+- Loading Transitions
+- Top Button
+- Header
+- Main
+- Card
+- Home
+- About
+- Skills
+- Projects
+- Contact
+- Mobile
+*/
+
 :root {
     --primary-color: rgb(96, 32, 32);
     --background-color: rgb(16, 16, 16);
@@ -201,6 +216,7 @@ section h1:not(.home-header h1) {
     background: url('../assets/background.jpg');
     background-position: 0 50%;
     background-size: 100%;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -543,4 +559,210 @@ section .section-top, section .section-bottom {
 
 #contact a:hover {
     color: #fff;
+}
+
+/* Mobile */
+@media screen and (max-width: 1000px) {
+    /* Top Button */
+    .top-btn {
+        display: none;
+    }
+
+    /* Header */
+    header {
+        justify-content: center;
+        padding: 0 16px;
+    }
+
+    header .header-left {
+        display: none;
+    }
+
+    header .nav {
+        padding: 0;
+    }
+
+    header .svg-inline--fa {
+        display: block;
+        margin: 0 auto 4px auto;
+    }
+
+    header .nav li {
+        font-size: 4vw;
+    }
+
+    header .nav li:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    /* Main */
+    section {
+        padding: 32px 24px 0 24px;
+    }
+
+    section .section-left, section .section-right {
+        width: unset;
+    }
+
+    section h1:not(.home-header h1) {
+        font-size: 32px;
+        line-height: 16px;
+    }
+
+    /* Card */
+    .card-title {
+        padding: 12px 0;
+        font-size: 20px;
+    }
+
+    /* Home */
+    #home  {
+        height: unset;
+        margin-top: 10vh;
+    }
+
+    /* About */
+    section .section-top, section .section-bottom {
+        display: unset;
+        opacity: 1;
+    }
+
+    #about .section-top .section-right, #about .section-bottom .section-left {
+        display: none;
+    }
+
+    #about .section-bottom .section-right {
+        margin-top: -16px;
+    }
+
+    #about p {
+        font-size: 16px;
+        line-height: 32px;
+        text-indent: 24px;
+    }
+
+    /* Skills */
+    .skills-wrapper {
+        display: unset;
+    }
+
+    .skills-group {
+        width: unset;
+        margin: 0 0 24px 0;
+    }
+
+    .skills-group .card-title {
+        padding: 12px 0;
+    }
+
+    .skills-group-items a {
+        margin: 16px;
+        font-size: 16px;
+    }
+
+    .skills-group-items img {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+
+    /* Projects */
+    .projects-wrapper {
+        display: unset;
+    }
+
+    .projects-list {
+        display: none;
+    }
+
+    .projects-slider {
+        width: 100%;
+        height: 850px;
+    }
+
+    #projects .card-title {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .project-content {
+        display: block;
+        padding: 16px;
+    }
+
+    .project-thumb {
+        width: 100%;
+        height: 50vw;
+    }
+
+    #project-thumb-4, #project-thumb-5 {
+        background-position: center calc(100% / 3);
+    }
+
+    .project-info {
+        width: 100%;
+        height: 100%;
+        margin-top: 16px;
+        margin-left: unset;
+    }
+
+    .project-description {
+        height: 100%;
+        font-size: 16px;
+        line-height: 32px;
+        overflow-y: unset;
+    }
+
+    .project-tools {
+        font-size: 16px;
+    }
+
+    .project-btns {
+        display: unset;
+    }
+
+    #projects button {
+        width: 100%;
+        margin: 0 0 16px 0;
+        padding: 16px;
+        font-size: 20px;
+    }
+
+    .prev-btn, .next-btn {
+        width: calc((100% / 3) - 8px) !important;
+    }
+
+    .project-btns .svg-inline--fa, .prev-btn .svg-inline--fa, .next-btn .svg-inline--fa {
+        margin-right: 16px;
+    }
+
+    .projects-slider-btns {
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .pause-btn {
+        width: calc((100% / 3) - 8px) !important;
+        margin: 0 8px !important;
+    }
+
+    /* Contact */
+    .contact-info-container {
+        width: 100%;
+    }
+
+    .contact-info {
+        padding: 8px 16px
+    }
+
+    .contact-item {
+        padding: 16px 0;
+    }
+
+    .contact-item div {
+        font-size: 16px;
+    }
+
+    .contact-item .svg-inline--fa {
+        margin-right: 8px;
+    }
 }
