@@ -445,10 +445,14 @@ section .section-top, section .section-bottom {
 }
 
 #project-thumb-1 {
+    background-size: 100%;
+}
+
+#project-thumb-2 {
     background-position: center;
 }
 
-#project-thumb-4, #project-thumb-5 {
+#project-thumb-5, #project-thumb-6 {
     background-position: center calc(100% / 3);
 }
 

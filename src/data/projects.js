@@ -1,5 +1,15 @@
 const projects = [
     {
+        name: 'My Trakt',
+        description: "My Trakt is a viewer app that uses the Trakt API and TMDB API to display a user's collection. " +
+            "Features include browsing a collection or list, displaying a user's top 5 movies and shows, searching " +
+            "for a specific item(s), and pagination for easier browsing.",
+        tools: 'JavaScript, React, HTML, CSS',
+        thumb: 'my-trakt.jpg',
+        demo: 'https://redraptor10.github.io/my-trakt/',
+        source: 'https://github.com/RedRaptor10/my-trakt'
+    },
+    {
         name: 'Odinbook',
         description: 'A clone of popular social media website, Facebook. ' +
             'Users can create an account and log in, view timelines, create posts and comments, ' +
