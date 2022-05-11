@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.93c4f9ba.css",
-    "main.js": "/portfolio/static/js/main.292a1727.js",
+    "main.css": "/portfolio/static/css/main.81e21b79.css",
+    "main.js": "/portfolio/static/js/main.8bc2d630.js",
+    "static/media/my-trakt.jpg": "/portfolio/static/media/my-trakt.dc19d82cf589a560387e.jpg",
     "static/media/wheres-waldo.jpg": "/portfolio/static/media/wheres-waldo.3f473c8dc90455465730.jpg",
     "static/media/avatar.png": "/portfolio/static/media/avatar.b1690d0ecd28bda40b2e.png",
     "static/media/background.jpg": "/portfolio/static/media/background.023464b2cd67e07be787.jpg",
@@ -27,11 +28,11 @@
     "static/media/html5.svg": "/portfolio/static/media/html5.f318c8b1d5945fa9adc8.svg",
     "static/media/javascript.svg": "/portfolio/static/media/javascript.b879f838faf1cb951d1c.svg",
     "static/media/react.svg": "/portfolio/static/media/react.638b460cfd7b8709a2ba.svg",
-    "main.93c4f9ba.css.map": "/portfolio/static/css/main.93c4f9ba.css.map",
-    "main.292a1727.js.map": "/portfolio/static/js/main.292a1727.js.map"
+    "main.81e21b79.css.map": "/portfolio/static/css/main.81e21b79.css.map",
+    "main.8bc2d630.js.map": "/portfolio/static/js/main.8bc2d630.js.map"
   },
   "entrypoints": [
-    "static/css/main.93c4f9ba.css",
-    "static/js/main.292a1727.js"
+    "static/css/main.81e21b79.css",
+    "static/js/main.8bc2d630.js"
   ]
 }
